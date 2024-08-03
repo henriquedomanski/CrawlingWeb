@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using FluentScheduler;
+using System;
+
+namespace CrawlerScraping;
+class program
+{
+    static void Main(string[] args)
+    {
+        JobManager.Initialize(new Configuracao());
+        Console.ReadLine();
+    }
+}
